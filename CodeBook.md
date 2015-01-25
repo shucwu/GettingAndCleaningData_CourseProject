@@ -47,6 +47,6 @@ The output dataset is tidy because:
 
 ## Transformation Performed
 
- Don't just make a tidy data set, make it clear to people reviewing it why it is tidy. When you given the variables descriptive names, explain why the names are descriptive. Don't give your reviewers the opportunity to be confused about your work, spell it out to them.
-
+* Source data files are read into data frames, and the variables are renamed in descriptive languages (e.g., subject, activity) or using measurement labels from features.txt
+* Data frames for the traning set are combined (using cbind) into one data frame. Separately, data frames for the test set are also combined (using cbind) into one data frame. Both the combined training and test data frames now have 563 variables (the original 561 from the X data file, 1 from the subject id file, 1 from y data file). 
 
