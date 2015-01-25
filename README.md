@@ -19,7 +19,7 @@ To run the script run_analysis.R, you will need:
 * Unzipped data folder "UCI HAR Dataset" present in the working directory of RStudio
 * R package libraries: dplyr, plyr, reshape2
 
-## How to read the tidy dataset?
+## How to read the output tidy dataset?
 
 read.table("tidydataset.txt", header=TRUE)
 
