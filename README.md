@@ -23,6 +23,6 @@ To run the script run_analysis.R, you will need:
 
 read.table("tidydataset.txt", header=TRUE)
 
-## Cool! How did you create such a beautify tidy dataset?
+## Cool! How did you create such a beautiful tidy dataset?
 
 Please refer to the CodeBook.md file in this repo
