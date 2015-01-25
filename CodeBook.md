@@ -48,5 +48,10 @@ The output dataset is tidy because:
 ## Transformation Performed
 
 * Source data files are read into data frames, and the variables are renamed in descriptive languages (e.g., subject, activity) or using measurement labels from features.txt
-* Data frames for the traning set are combined (using cbind) into one data frame. Separately, data frames for the test set are also combined (using cbind) into one data frame. Both the combined training and test data frames now have 563 variables (the original 561 from the X data file, 1 from the subject id file, 1 from y data file). 
+* Data frames for the traning set are combined (using cbind) into one data frame. Separately, data frames for the test set are also combined (using cbind) into one data frame. Both the combined training and test data frames now have 563 variables (the original 561 from the X data file, 1 from the subject id file, 1 from y data file) 
+* The two data frames of combined train and test set data frames are further merged into one complete data frame (using rbind)
+* From this complete data frame, measurements related to mean and std are extracted using grep. The extracted data frames are then combined with subject id and activity information (using cbind) to form the subset data frame on which the output tidy dataset will be based
+* descriptive label
+  * activity
+  * measurements
 
