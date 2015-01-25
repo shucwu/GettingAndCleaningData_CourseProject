@@ -47,11 +47,27 @@ The output dataset is tidy because:
 
 ## Transformation Performed
 
-* Source data files are read into data frames, and the variables are renamed in descriptive languages (e.g., subject, activity) or using measurement labels from features.txt
-* Data frames for the traning set are combined (using cbind) into one data frame. Separately, data frames for the test set are also combined (using cbind) into one data frame. Both the combined training and test data frames now have 563 variables (the original 561 from the X data file, 1 from the subject id file, 1 from y data file) 
-* The two data frames of combined train and test set data frames are further merged into one complete data frame (using rbind)
-* From this complete data frame, measurements related to mean and std are extracted using grep. The extracted data frames are then combined with subject id and activity information (using cbind) to form the subset data frame on which the output tidy dataset will be based
-* descriptive label
-  * activity
-  * measurements
+* Read source data
+  * Each source data file is read into a separate data frame
+  * variables are renamed in descriptive languages (e.g., subject, activity) or using measurement labels from features.txt
+* Combine data frames
+  * Data frames for the traning set are combined (using cbind) into one data frame 
+  * Separately, data frames for the test set are also combined (using cbind) into one data frame 
+  * Both the combined training and test data frames now have 563 variables (the original 561 from the X data file, 1 from the subject id file, 1 from y data file) 
+  * The two data frames of combined train and test set data frames are further merged into one complete data frame (using rbind)
+* Extract measurements
+  * From the complete data frame, measurements related to mean and std are extracted using grep. 
+  * The extracted data frames are then combined with subject id and activity information (using cbind) to form the subset data frame on which the output tidy dataset will be based
+* Apply descriptive labels
+  * Levels in the activity variable are renamed using information from activity_labels.txt
+  * Measurement names are made descriptive by applying the following changes:
+    * Remove symbols from names
+    * Replace t with time and f with fft (for Fast Fourier Transform)
+    * Expand Acc as Accerleration
+    * Expand Mag as Magnitude
+    * Put everyhing in CamelCase
+* Creat the tidy dataset
+  * Transform the dataset using melt with subject and activity as the identifiers. The resulting dataset has 4 variables: subject, activity, variable (which contains the measurements in one column), and value (that is associated with the subject, activity, and the specific measurement)
+  * Transform the dataset again using ddply to obtain the average of each variable (i.e., measurement) for each activity and each subject
+  * Write the final tidy dataset out to tidydataset.txt
 
