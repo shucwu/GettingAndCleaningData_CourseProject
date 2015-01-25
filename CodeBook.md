@@ -40,7 +40,7 @@ The output tidy dataset (tidydataset.txt in repo) has 4 variables:
 
 * activity: 6 types of activities in descriptive names (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
-* variable: mean and std related measures from the source data, in descriptive names written in CamelCase. The following is the list of all possible variable levels/measures. The prefix "time" designates time domain signals. The prefix "fft" designates frequency domain signals derived from Fast Fourier Transform (FFT). The rest are coded in descritive languages and hopefully self explanatory. :-) 
+* variable: mean and std related measures from the source data, in descriptive names written in CamelCase. The following is a list of all possible variable levels/measures. The prefix "time" designates time domain signals. The prefix "fft" designates frequency domain signals derived from Fast Fourier Transform (FFT). The rest are coded in descritive languages and hopefully self explanatory. :-) 
 
   * "timeBodyAccelerationMeanX"
   * "timeBodyAccelerationMeanY"
