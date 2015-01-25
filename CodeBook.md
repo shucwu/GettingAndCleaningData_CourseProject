@@ -35,9 +35,13 @@ Three sets of data files are required for the analysis: training set, test set, 
 ## Output Tidy Dataset
 
 The output tidy dataset (tidydataset.txt in repo) has 4 variables: 
+
 * subject: subject identification number
+
 * activity: 6 types of activities in descriptive names (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
 * variable: mean and std related measures from the source data, in descriptive names written in CamelCase. The following is the list of all possible variable levels/measures. The prefix "time" designates time domain signals. The prefix "fft" designates frequency domain signals derived from Fast Fourier Transform (FFT). The rest are coded in descritive languages and hopefully self explanatory. :-) 
+
   * "timeBodyAccelerationMeanX"
   * "timeBodyAccelerationMeanY"
   * "timeBodyAccelerationMeanZ"
@@ -104,6 +108,7 @@ The output tidy dataset (tidydataset.txt in repo) has 4 variables:
   * "fftBodyBodyAccelerationJerkMagnitudeStd"
   * "fftBodyBodyGyroMagnitudeStd"
   * "fftBodyBodyGyroJerkMagnitudeStd"
+
 * mean: the average of each variable for each activity and each subject. Note that measurements are normalised and so unitlless
 
 The output dataset is tidy because:
