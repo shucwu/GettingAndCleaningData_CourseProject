@@ -1,3 +1,7 @@
 # README.md
 
-This repo explains how all of the scripts work and how they are connected
+## What is in this repo?
+
+This repo contains 4 files:
+* README.md: The file you are reading
+* CodeBook.md: The CodeBook that describes
