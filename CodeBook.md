@@ -1,15 +1,17 @@
 # CodeBook.md
 
-This is the CodeBook for the Course Project of Getting and Cleaning Data. 
+This is the CodeBook for the Course Project of Getting and Cleaning Data. It describes the source data, the varaibles in the output tidy dataset (tidydataset.txt in repo), and  transformations performed to the source data in order to produce the tidy dataset (run_analysis.R in repo). 
 
 ## Purpose of Project
 
 The purpose of the project is to create a tidy data set based on the data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
-## Required Resources
+## Required Resources 
 
 * Unzipped data folder "UCI HAR Dataset" present in the working directory of RStudio
 * R package libraries: dplyr, plyr, reshape2
+
+
 
 ## Transformation Performed
 
