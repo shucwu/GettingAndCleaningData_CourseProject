@@ -29,10 +29,21 @@ Three sets of data files are required for the analysis: training set, test set, 
 
 ### Descriptive label set:
 
-* features.txt (561 observations, 2 variables): contains the names of the 561 variables for X\_train.txt and X\n_test.txt
+* features.txt (561 observations, 2 variables): contains the names of the 561 variables for X\_train.txt and X\_test.txt
 * activity_labels.txt (6 observations, 2 variables): contains the names of the activities
 
 ## Output Tidy Dataset
+
+The output tidy dataset (tidydataset.txt in repo) has 4 variables: 
+* subject: subject id number
+* activity: 6 types of activities in descriptive names (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* variable: mean and std related measures from the source data, in descriptive names written in CamelCase
+* mean: the average of each variable for each activity and each subject
+
+The output dataset is tidy because:
+* Each variable (subject, activity, variable, mean) is in its own column
+* Each observation is in a different row
+* In addition, levels within a variable have descriptive labels written in easily readable CamelCase
 
 ## Transformation Performed
 
