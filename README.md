@@ -8,6 +8,10 @@ This repo contains 4 files:
 * tidydataset.txt: the resulting tidy dataset produced by run_analysis.R
 * CodeBook.md: describes the source data, the varaibles in the output tidy dataset (tidydataset.txt), and  transformations performed to the source data in order to produce the tidy dataset (run_analysis.R) 
 
+## What does the script run_analysis.R do?
+
+It reads in the source data files and produce a tidy dataset
+
 ## How to run the script?
 
 To run the script run_analysis.R, you will need:
